@@ -11,6 +11,7 @@ class ViewController: UIViewController {
 
     
     private let statusLabel = StatusLabel()
+    private let emailTextField = EmailTextField()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,6 +23,7 @@ class ViewController: UIViewController {
 
     func setupView() {
         view.addSubview(statusLabel)
+        view.addSubview(emailTextField)
     }
     
     func setDelegates() {
@@ -46,8 +48,7 @@ extension ViewController {
             statusLabel.topAnchor.constraint(equalTo: view.topAnchor, constant: 300),
             statusLabel.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20),
             statusLabel.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20)
-        
-        
         ])
+        
     }
 }

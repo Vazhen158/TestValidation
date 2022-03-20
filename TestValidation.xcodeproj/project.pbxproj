@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		C940B1F427E774B10021A2DB /* StatusLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C940B1F327E774B10021A2DB /* StatusLabel.swift */; };
+		C940B1F827E779100021A2DB /* UIStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C940B1F727E779100021A2DB /* UIStackView.swift */; };
+		C940B1FA27E77C350021A2DB /* EmailTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = C940B1F927E77C350021A2DB /* EmailTextField.swift */; };
+		C940B1FC27E77E610021A2DB /* VerificationButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C940B1FB27E77E610021A2DB /* VerificationButton.swift */; };
 		C98E8CBD27E61D0D009E539E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C98E8CBC27E61D0D009E539E /* AppDelegate.swift */; };
 		C98E8CBF27E61D0D009E539E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C98E8CBE27E61D0D009E539E /* SceneDelegate.swift */; };
 		C98E8CC127E61D0D009E539E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C98E8CC027E61D0D009E539E /* ViewController.swift */; };
@@ -17,6 +20,9 @@
 
 /* Begin PBXFileReference section */
 		C940B1F327E774B10021A2DB /* StatusLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusLabel.swift; sourceTree = "<group>"; };
+		C940B1F727E779100021A2DB /* UIStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIStackView.swift; sourceTree = "<group>"; };
+		C940B1F927E77C350021A2DB /* EmailTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailTextField.swift; sourceTree = "<group>"; };
+		C940B1FB27E77E610021A2DB /* VerificationButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerificationButton.swift; sourceTree = "<group>"; };
 		C98E8CB927E61D0D009E539E /* TestValidation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestValidation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C98E8CBC27E61D0D009E539E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C98E8CBE27E61D0D009E539E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -57,6 +63,8 @@
 			isa = PBXGroup;
 			children = (
 				C940B1F327E774B10021A2DB /* StatusLabel.swift */,
+				C940B1F927E77C350021A2DB /* EmailTextField.swift */,
+				C940B1FB27E77E610021A2DB /* VerificationButton.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -67,6 +75,22 @@
 				C98E8CC027E61D0D009E539E /* ViewController.swift */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		C940B1F527E778BF0021A2DB /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				C940B1F627E778E40021A2DB /* UIKit */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		C940B1F627E778E40021A2DB /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				C940B1F727E779100021A2DB /* UIStackView.swift */,
+			);
+			path = UIKit;
 			sourceTree = "<group>";
 		};
 		C98E8CB027E61D0D009E539E = {
@@ -92,6 +116,7 @@
 				C940B1F027E771C10021A2DB /* Models */,
 				C940B1F127E771E20021A2DB /* View */,
 				C940B1F227E771F90021A2DB /* Controller */,
+				C940B1F527E778BF0021A2DB /* Extensions */,
 				C98E8CC527E61D10009E539E /* Assets.xcassets */,
 				C98E8CC727E61D10009E539E /* LaunchScreen.storyboard */,
 				C98E8CCA27E61D10009E539E /* Info.plist */,
@@ -170,7 +195,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				C940B1F427E774B10021A2DB /* StatusLabel.swift in Sources */,
+				C940B1FC27E77E610021A2DB /* VerificationButton.swift in Sources */,
 				C98E8CC127E61D0D009E539E /* ViewController.swift in Sources */,
+				C940B1FA27E77C350021A2DB /* EmailTextField.swift in Sources */,
+				C940B1F827E779100021A2DB /* UIStackView.swift in Sources */,
 				C98E8CBD27E61D0D009E539E /* AppDelegate.swift in Sources */,
 				C98E8CBF27E61D0D009E539E /* SceneDelegate.swift in Sources */,
 			);
