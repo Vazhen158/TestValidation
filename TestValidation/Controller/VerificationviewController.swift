@@ -7,11 +7,14 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class VerificationviewController: UIViewController {
 
     
     private let statusLabel = StatusLabel()
     private let emailTextField = EmailTextField()
+    private let verificationButton = VerificationButton()
+    private let collectionView = MailCollectionView(frame: .zero, collectionViewLayout: UICollectionViewLayout())
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,7 +30,7 @@ class ViewController: UIViewController {
     }
     
     func setDelegates() {
-        
+        collectionView.dataSource = self
     }
     
     func configureBackground() {
@@ -41,8 +44,21 @@ class ViewController: UIViewController {
 
 
 }
+extension VerificationviewController: UICollectionViewDataSource {
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        6
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: IdCell.idMailCell.rawValue, for: indexPath) as? MailCollectionViewCell
+        else {return UICollectionViewCell()}
+        return cell
+    }
+    
+    
+}
 
-extension ViewController {
+extension VerificationviewController {
     func setConstraints() {
         NSLayoutConstraint.activate([
             statusLabel.topAnchor.constraint(equalTo: view.topAnchor, constant: 300),
