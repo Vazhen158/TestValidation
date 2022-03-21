@@ -13,12 +13,11 @@ class MailCollectionViewCell: UICollectionViewCell {
     
     private let domainLabel: UILabel = {
         let label = UILabel()
+        label.text = "@gmail.com"
         label.font = UIFont(name: "Apple SD Gothic Neo", size: 16)
-        
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
-    
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -34,7 +33,6 @@ class MailCollectionViewCell: UICollectionViewCell {
         contentView.backgroundColor = .white
         contentView.alpha = 0.5
         contentView.layer.cornerRadius = 10
-        
         addSubview(domainLabel)
     }
 }
@@ -45,8 +43,5 @@ extension MailCollectionViewCell {
             domainLabel.centerXAnchor.constraint(equalTo: centerXAnchor),
             domainLabel.centerYAnchor.constraint(equalTo: centerYAnchor)
         ])
-        
-        
     }
-    
 }

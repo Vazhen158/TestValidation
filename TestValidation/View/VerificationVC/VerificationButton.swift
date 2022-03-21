@@ -20,10 +20,10 @@ class VerificationButton: UIButton {
     private func configure() {
         backgroundColor = .white
         setTitle("Verification button", for: .normal)
-        setTitleColor(.white, for: .normal)
+        setTitleColor(.gray, for: .normal)
         layer.cornerRadius = 10
         titleLabel?.font = UIFont(name: "Apple SD Gothic Neo", size: 20)
-        isEnabled = false
+        //isEnabled = false
         alpha = 0.5
         translatesAutoresizingMaskIntoConstraints = false
     }
