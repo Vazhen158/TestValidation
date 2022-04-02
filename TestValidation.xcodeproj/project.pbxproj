@@ -18,6 +18,7 @@
 		C98E8CC127E61D0D009E539E /* VerificationviewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C98E8CC027E61D0D009E539E /* VerificationviewController.swift */; };
 		C98E8CC627E61D10009E539E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C98E8CC527E61D10009E539E /* Assets.xcassets */; };
 		C98E8CC927E61D10009E539E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C98E8CC727E61D10009E539E /* LaunchScreen.storyboard */; };
+		C9D5AD9027F8B60B007EFB2D /* VerificationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D5AD8F27F8B60A007EFB2D /* VerificationModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		C98E8CC527E61D10009E539E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C98E8CC827E61D10009E539E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C98E8CCA27E61D10009E539E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C9D5AD8F27F8B60A007EFB2D /* VerificationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerificationModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +80,7 @@
 		C940B1F027E771C10021A2DB /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				C9D5AD8F27F8B60A007EFB2D /* VerificationModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -216,6 +219,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C9D5AD9027F8B60B007EFB2D /* VerificationModel.swift in Sources */,
 				C940B1F427E774B10021A2DB /* StatusLabel.swift in Sources */,
 				C919BBEC27E8D2A30052C784 /* MailCollectionViewCell.swift in Sources */,
 				C940B1FC27E77E610021A2DB /* VerificationButton.swift in Sources */,
