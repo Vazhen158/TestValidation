@@ -35,6 +35,14 @@ class MailCollectionViewCell: UICollectionViewCell {
         contentView.layer.cornerRadius = 10
         addSubview(domainLabel)
     }
+    
+    private func configure(mailLabelText: String) { // добавляет текст в лейбл
+        domainLabel.text = mailLabelText
+    }
+    public func cellConfigure(mailLabelText: String) { //глобальная функция для возможности взаимодействия с vc  и передачи данных в лейбл
+        configure(mailLabelText: mailLabelText)
+    }
+    
 }
 extension MailCollectionViewCell {
     
