@@ -78,8 +78,15 @@ extension VerificationviewController: UICollectionViewDataSource {
 }
 extension VerificationviewController: SelectProposedMailProtocol {
     func selectProposedMail(indexParh: IndexPath) {
-        print(indexParh)
-        
+        guard let text = emailTextField.text else {return}
+        verificationModel.getMailNmae(text: text)
+        let domainMail = verificationModel.filtredMailArray[indexParh.row]
+        let mailFullName = verificationModel.nameMails + domainMail
+        emailTextField.text = mailFullName
+        statusLabel.isValid = mailFullName.isValid()
+        verificationButton.isValid = mailFullName.isValid()
+        verificationModel.filtredMailArray = []
+        collectionView.reloadData()
     }
     
 }
