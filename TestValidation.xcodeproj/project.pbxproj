@@ -19,6 +19,7 @@
 		C98E8CC627E61D10009E539E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C98E8CC527E61D10009E539E /* Assets.xcassets */; };
 		C98E8CC927E61D10009E539E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C98E8CC727E61D10009E539E /* LaunchScreen.storyboard */; };
 		C9D5AD9027F8B60B007EFB2D /* VerificationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D5AD8F27F8B60A007EFB2D /* VerificationModel.swift */; };
+		C9D5AD9227F8C291007EFB2D /* String + Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D5AD9127F8C291007EFB2D /* String + Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		C98E8CC827E61D10009E539E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C98E8CCA27E61D10009E539E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C9D5AD8F27F8B60A007EFB2D /* VerificationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerificationModel.swift; sourceTree = "<group>"; };
+		C9D5AD9127F8C291007EFB2D /* String + Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String + Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +107,7 @@
 		C940B1F527E778BF0021A2DB /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				C9D5AD9127F8C291007EFB2D /* String + Extensions.swift */,
 				C940B1F627E778E40021A2DB /* UIKit */,
 			);
 			path = Extensions;
@@ -224,6 +227,7 @@
 				C919BBEC27E8D2A30052C784 /* MailCollectionViewCell.swift in Sources */,
 				C940B1FC27E77E610021A2DB /* VerificationButton.swift in Sources */,
 				C98E8CC127E61D0D009E539E /* VerificationviewController.swift in Sources */,
+				C9D5AD9227F8C291007EFB2D /* String + Extensions.swift in Sources */,
 				C940B1FA27E77C350021A2DB /* EmailTextField.swift in Sources */,
 				C940B1F827E779100021A2DB /* UIStackView.swift in Sources */,
 				C919BBE827E8D0850052C784 /* MailCollectionView.swift in Sources */,

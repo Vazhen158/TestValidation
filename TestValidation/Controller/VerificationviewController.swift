@@ -14,9 +14,9 @@ class VerificationviewController: UIViewController {
     private let verificationButton = VerificationButton()
     private let collectionView = MailCollectionView(frame: .zero, collectionViewLayout: UICollectionViewFlowLayout())
     private lazy var stackView = UIStackView(arrangedSubvies: [emailTextField,
-                                                          verificationButton,
-                                                          collectionView],
-                                         axis: .vertical, spacing: 20)
+                                                               verificationButton,
+                                                               collectionView],
+                                             axis: .vertical, spacing: 20)
     
     private let verificationModel = VerificationModel()
     
@@ -28,7 +28,7 @@ class VerificationviewController: UIViewController {
         setConstraints()
         configureBackground()
     }
-
+    
     func setupView() {
         view.addSubview(statusLabel)
         view.addSubview(emailTextField)
@@ -53,9 +53,9 @@ class VerificationviewController: UIViewController {
         gradient.colors = [UIColor.blue.cgColor, UIColor.green.cgColor]
         gradient.frame = view.bounds
         view.layer.insertSublayer(gradient, at: 0)
-      }
-
-
+    }
+    
+    
 }
 
 
@@ -79,18 +79,24 @@ extension VerificationviewController: UICollectionViewDataSource {
 extension VerificationviewController: SelectProposedMailProtocol {
     func selectProposedMail(indexParh: IndexPath) {
         print(indexParh)
+        
     }
     
 }
 
 extension VerificationviewController: ActionMailTextFieldProtocol {
     func typingText(text: String) {
+        statusLabel.isValid = text.isValid()
+        verificationButton.isValid = text.isValid()
         verificationModel.getFiltredMail(text: text)
         collectionView.reloadData()
     }
     
     func clenOutTextField() {
-        print("clear")
+        statusLabel.setDefaultSettings()
+        verificationButton.setDefaultSettings()
+        verificationModel.filtredMailArray = []
+        collectionView.reloadData()
     }
 }
 
