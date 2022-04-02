@@ -36,6 +36,7 @@ class VerificationviewController: UIViewController {
     func setDelegates() {
         collectionView.dataSource = self
         collectionView.selectMailDelegate = self
+        emailTextField.textFieldDelegate = self
     }
     
     @objc func verificationButtonTapped() {
