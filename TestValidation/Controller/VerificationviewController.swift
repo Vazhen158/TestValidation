@@ -54,10 +54,7 @@ class VerificationviewController: UIViewController {
         gradient.frame = view.bounds
         view.layer.insertSublayer(gradient, at: 0)
     }
-    
-    
 }
-
 
 extension VerificationviewController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
