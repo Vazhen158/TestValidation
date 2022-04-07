@@ -12,6 +12,7 @@
 		C92B32DA27FF4525008CD80E /* MailApiKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = C92B32D927FF4525008CD80E /* MailApiKey.swift */; };
 		C92B32DC27FF463F008CD80E /* NetworkRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C92B32DB27FF463F008CD80E /* NetworkRequest.swift */; };
 		C92B32DE27FF4A70008CD80E /* MailResponceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C92B32DD27FF4A70008CD80E /* MailResponceModel.swift */; };
+		C92B32E027FF50E7008CD80E /* NetworkDataFetch.swift in Sources */ = {isa = PBXBuildFile; fileRef = C92B32DF27FF50E7008CD80E /* NetworkDataFetch.swift */; };
 		C940B1F427E774B10021A2DB /* StatusLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C940B1F327E774B10021A2DB /* StatusLabel.swift */; };
 		C940B1F827E779100021A2DB /* UIStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C940B1F727E779100021A2DB /* UIStackView.swift */; };
 		C940B1FA27E77C350021A2DB /* EmailTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = C940B1F927E77C350021A2DB /* EmailTextField.swift */; };
@@ -31,6 +32,7 @@
 		C92B32D927FF4525008CD80E /* MailApiKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MailApiKey.swift; sourceTree = "<group>"; };
 		C92B32DB27FF463F008CD80E /* NetworkRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRequest.swift; sourceTree = "<group>"; };
 		C92B32DD27FF4A70008CD80E /* MailResponceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MailResponceModel.swift; sourceTree = "<group>"; };
+		C92B32DF27FF50E7008CD80E /* NetworkDataFetch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkDataFetch.swift; sourceTree = "<group>"; };
 		C940B1F327E774B10021A2DB /* StatusLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusLabel.swift; sourceTree = "<group>"; };
 		C940B1F727E779100021A2DB /* UIStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIStackView.swift; sourceTree = "<group>"; };
 		C940B1F927E77C350021A2DB /* EmailTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailTextField.swift; sourceTree = "<group>"; };
@@ -82,6 +84,7 @@
 			children = (
 				C92B32D927FF4525008CD80E /* MailApiKey.swift */,
 				C92B32DB27FF463F008CD80E /* NetworkRequest.swift */,
+				C92B32DF27FF50E7008CD80E /* NetworkDataFetch.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -243,6 +246,7 @@
 				C9D5AD9027F8B60B007EFB2D /* VerificationModel.swift in Sources */,
 				C940B1F427E774B10021A2DB /* StatusLabel.swift in Sources */,
 				C919BBEC27E8D2A30052C784 /* MailCollectionViewCell.swift in Sources */,
+				C92B32E027FF50E7008CD80E /* NetworkDataFetch.swift in Sources */,
 				C940B1FC27E77E610021A2DB /* VerificationButton.swift in Sources */,
 				C98E8CC127E61D0D009E539E /* VerificationviewController.swift in Sources */,
 				C92B32DA27FF4525008CD80E /* MailApiKey.swift in Sources */,

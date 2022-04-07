@@ -43,7 +43,18 @@ class VerificationviewController: UIViewController {
     }
     
     @objc func verificationButtonTapped() {
-        print("Button")
+        guard let mail = emailTextField.text else {return}
+        NetworkDataFetch.shared.fetchMail(verifiableMail: mail) { result, error in
+            if error == nil {
+                guard let result = result else {return}
+                if result.success {
+                    print("Good")
+                }
+            } else {
+                guard let errorDescription = error?.localizedDescription else {return}
+                print("error")
+            }
+        }
     }
     
     func configureBackground() {
